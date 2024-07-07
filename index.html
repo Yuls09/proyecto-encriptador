@@ -9,30 +9,40 @@
 <body>
   <div class="container">
     <div class="encriptar">
-      <textarea 
-      name="texto" id="texto" cols="30" rows="10" placeholder="Ingresa el texto"
+      <textarea
+        name="texto"
+        class="texto"
+        id="texto"
+        cols="30"
+        rows="10"
+        placeholder="Ingresa el texto aquí"
       ></textarea>
-    </div>
-    <div class="terminos">
-      <p>Solo letras minúsculas y sin acento</p>
-    </div>
-    <div class="botones">
-      <button class="boton-encriptar" type="button" onclick="encriptar()">
-        Encriptar
-      </button>
-      <button class="boton-desencriptar" type="button" onclick="encriptar()">
-        Desencriptar
-      </button>
+
+      <div class="terminos">
+        <p>Solo letras minúsculas y sin acentos.</p>
+      </div>
+      <div class="botones">
+        <button class="btn-encriptar" type="button" onclick="encriptar()">
+          Encriptar
+        </button>
+        <input
+          type="button"
+          class="btn-desencriptar"
+          value="Desencriptar"
+          onclick="desencriptar()"
+        />
+      </div>
     </div>
     <div class="encriptado">
-      <img src="" alt="" id="bonito">
+      <img src="img/muñeco.png" alt="" id="muñeco" />
       <div class="mensaje-encriptado" id="mensaje-encriptado">
-        <h2 id="titulo-de-mensaje">Ningún mensaje encontrado</h2>
-        <p id="parafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
+        <p id="parrafo">
+          Ingresa el texto que deseas encriptar o desencriptar
+        </p>
+      </div>
     </div>
-    </div>
-</div>
+  </div>
 </body>
 <script src="app.js"></script>
 </html>
